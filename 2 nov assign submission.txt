@@ -1,0 +1,176 @@
+//Q1: store three value 1-:23
+                        2-:3.456
+                        3-:123456
+#include <stdio.h>
+int main()
+{
+    int a=23;
+    float b=3.456;
+    int c=123456;
+    printf(" a:=%d\n b:%f\n c:%d",a,b,c);
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________
+//Q2: store the value : T
+                        W
+                        U
+                        H
+#include <stdio.h>
+int main()
+{
+    char a='T',b='W',c='U',d='H';
+    printf(" a:%c\n b:%c\n c:%c\n d=%c\n",a,b,c,d);
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________
+3)=12 +78 
+
+4)=567-34 
+
+5)=22/2
+ 
+6)=23*124
+
+//Q:3,4,5,6
+#include <stdio.h>
+int main()
+{
+    int add1=12,add2=8,add,min1=567,min2=34,minus,div1=22,div2=2,divide,multi1=23,multi2=124,multiply;
+        add=add1+add2;
+        minus=min1-min2;
+        divide=div1/div2;
+        multiply=multi1*multi2;
+    printf("The addition of %d and %d is %d\n",add1,add2,add);
+    printf("The subtraction of %d and %d is %d\n",min1,min2,minus);
+    printf("The division of %d and %d is %d\n",div1,div2,divide);
+    printf("The multiplication of %d and %d is %d",multi1,multi2,multiply);
+    return 0;
+}
+________________________________________________________________________________________________________________________________________________________
+Q:7
+
+//Q:7 ADD:23,56,8,12
+#include <stdio.h>
+int main()
+{
+    int a=23,b=56,c=8,d=12,ans;
+    ans=a+b+c+d;
+    printf("The addition numbers %d,%d,%d,%d,is %d",a,b,c,d,ans);
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________
+//Q:8
+
+#include <stdio.h>
+int main()
+{
+    int a=67,b=12,c=3,d=7,ans;
+    ans=a-b*c+d;
+    printf("The answer of question %d-%d*%d+%d,is:%d",a,b,c,d,ans);
+    return 0;
+}
+_______________________________________________________________________________________________________________________________________________________________________________
+//Q:9  1.2+5.6*2-8
+
+#include <stdio.h>
+int main()
+{
+    float a=1.2,b=5.6,ans;
+    int c=2,d=8;
+    ans=a+b*c-d;
+    printf("The answer of question %f-%f*%d+%d,is:%f",a,b,c,d,ans);
+    return 0;
+}
+
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+//Q:10   12+(56*32)-78/2
+
+#include <stdio.h>
+int main()
+{
+    int a=12,b=56,c=32,d=78,e=2,ans;
+    ans=a+(b*c)-d/e;
+    printf("The answer of question %d+(%d*%d)-%d/%d is: %d",a,b,c,d,e,ans);
+    return 0;
+}
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+//Q:11   area of square side*side
+
+#include <stdio.h>
+int main()
+{
+    int side=2,area;
+    area=side*4;
+    printf("Area of square of side %d cm is: %d",side,area);
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________
+
+//Q:12   area of triangle  1/2(b*h)
+
+#include <stdio.h>
+int main()
+{
+    int base=2,height=2,area;
+    area=(base*height)/2;
+    printf("Area of triangle of base %d cm and height %d cm is: %d cm",base,height,area);
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+//Q:13   area of rectangle  
+
+#include <stdio.h>
+int main()
+{
+    int length=2,width=2,area;
+    area=length*width;
+    printf("Area of rectangle of length %dcm and width %dcm is: %dcm",length,width,area);
+    return 0;
+}
+
+___________________________________________________________________________________________________________________________________________________________________________________
+
+//14: volume of sphere   V=(4/3)*3.14*r^3.
+#include <stdio.h>
+int main()
+{
+    int r=2;
+    float volume;
+    volume=(4*3.14*r*r*r)/3.0;
+    printf("volume of sphere of radius %d is %f",r,volume);
+    return 0;
+}
+
+________________________________________________________________________________________________________________________________________________________________________________________
+
+//15: volume of cube  V=(4/3)*3.14*r^3.
+#include <stdio.h>
+int main()
+{
+    int area=2,volume;
+    volume=area*area*area;
+    printf("volume of cube of area %d is %d",area,volume);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

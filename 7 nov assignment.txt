@@ -1,0 +1,598 @@
+//Q1): three number maximum
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Please enter the three numbers a,b and c: ");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b && a>c)
+    {
+     printf("A is maximum");
+    }
+    else if(b>a && b>c)
+    {
+        printf("B is maximum");
+    }
+    else
+    {
+        printf("C is maximum");
+    }
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q2): Five number maximum
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    printf("Please enter the numbers to check maximum among five numbers: ");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    if(a>b && a>c && a>d && a>e)
+    {
+     printf("A is maximum");
+    }
+    else if(b>a && b>c && b>d && b>e)
+    {
+        printf("B is maximum");
+    }
+    else if(c>a && c>b && c>d && b>e)
+    {
+        printf("C is maximum");
+    }
+    else if(d>a && d>b && d>c && d>e)
+    {
+        printf("D is maximum");
+    }
+    else
+    {
+        printf("E is maximum");
+    }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Q3): 10 number maximum
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e,f,g,h,i,j;
+    printf("Please enter the numbers to check maximum among you entered: ");
+    scanf("%d %d %d %d %d %d %d %d %d %d",&a,&b,&c,&d,&e,&f,&g,&h,&i,&j);
+    if(a>b && a>c && a>d && a>e && a>f && a>g && a>h && a>i && a>j)
+    {
+        printf("First number is maximum");
+    }
+    else if(b>a && b>c && b>d && b>e && b>f && b>g && b>h && b>i && b>j)
+    {
+        printf("Second number is maximum");
+    }
+    else if(c>a && c>b && c>d && c>e && c>f && c>g && c>h && c>i && c>j)
+    {
+        printf("Third number is maximum");
+    }
+    else if(d>a && d>b && d>c  && d>e && d>f && d>g && d>h && d>i && d>j)
+    {
+        printf("Fourth number is maximum");
+    }
+    else if(e>a && e>b && e>c && e>d && e>f && e>g && e>h && e>i && e>j)
+    {
+        printf("Fifth number is maximum");
+    }
+    else if(f>a && f>b && f>c && f>d && f>e && f>g && f>h && f>i && f>j)
+    {
+        printf("Sixth number is maximum");
+    }
+    else if(g>a && g>b && g>c && g>d && g>e && g>f && g>h && g>i && g>j)
+    {
+        printf("Seventh number is maximum");
+    }
+    else if(h>a && h>b && h>c && h>d && h>e && h>f && h>g && h>i && h>j)
+    {
+        printf("Eight number is maximum");
+    }
+    else if(i>a && i>b && i>c && i>d && i>e && i>f && i>g && i>h && i>j)
+    {
+        printf("Ninth number is maximum");
+    }
+    else
+    {
+        printf("Tenth number is maximum");
+    }
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q4): write a c program to check a number is divisible by 7 and 4 both ? 
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Please enter the number: ");
+    scanf("%d",&a);
+    if(a%7==0 && a%4==0)
+    {
+        printf("The number is divisible by 4 and 7 both");
+    }
+    else
+    {
+     printf("Not matched");    
+    }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q5): write a c program to check a number is divisible by 6 and 9 only one ? 
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Please enter the number: ");
+    scanf("%d",&a);
+    if(6%a==0 || 9%a==0)
+    {
+        printf("The number is divisible");
+    }
+    else
+    {
+        printf("Not matched");
+    }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Q6)  A: write a c program of number swap with third varaible ? 
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Please enter the number: ");
+    scanf("%d %d",&a,&b);
+    printf("The value of A and B is: %d %d\n",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("The swap value of A and B is: %d %d",a,b);
+    return 0;
+}
+-----------------------------------------------------------
+//Q6)  B: write a c program of number swap without third varaible ? 
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Please enter the number: ");
+    scanf("%d %d",&a,&b);
+    printf("The value of A and B is: %d %d\n",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("The swap value of A and B is: %d %d",a,b);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q7) :write a c program to check a number is even or odd ? 
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Please enter the number: ");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("The number is even");
+    }
+    else
+    {
+        printf("The number is odd");
+    }
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________________
+//Q8) :write a c program to check a user is valid for vote or not 
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Please enter the your age: ");
+    scanf("%d",&a);
+    if(a>=18)
+    {
+        printf("You are eligible for vote");
+    }
+    else
+    {
+        printf("Not eligible for vote");
+    }
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________________
+//Q9) :write a c program to check a character is vowel and consonat ?  
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Please enter the character: ");
+    scanf("%c",&a);
+    if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a=='A'||a=='E'||a=='I'||a=='O'||a=='U')
+    {
+        printf("Your alphabet is vowel");
+    }
+    else
+    {
+        printf("Your alphabet is consonat");
+    }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*Q10) :write a c program user input m then print male when user input f then print female 
+when user input o then print not match for any gender when user input a characeter any other you are not valid for service*/   
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Please enter the character: ");
+    scanf("%c",&a);
+    if(a=='m'||a=='M')
+    {
+        printf("Male");
+    }
+    else if(a=='f'||a=='F')
+    {
+        printf("Female");
+    }
+    else if(a=='o')
+    {
+        printf("No match for any gender");
+    }
+    else
+    {
+        printf("Tu insaan nhi hai bhai(Not valid for service)");
+    }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q11) :1----->50 koe bhi number daley this a number bettween 1 to 50
+  Q12): 34----->98 this is a number between 34 to 98 
+  Q13):456------->899 this is a number between 456 ti 899*/
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Please enter the number: ");
+    scanf("%d",&a);
+    if(a>=1&&a<=50)
+    {
+        printf("This is a number between 1 t 50 category");
+    }
+    else if(a>=34&&a<=98)
+    {
+        printf("This number lies between 34 to 98 category");
+    }
+    else if(a>=456&&a<=899)
+    {
+        printf("This number lies between 456 to 899 category");
+    }
+    else
+    {
+        printf("Not matched");
+    }
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________________
+//Q14): a-----z koe bhi  character =>this is a lowercase 
+#include<stdio.h>
+int main ()
+{
+  char a;
+  printf ("Please enter the character: ");
+  scanf ("%c", &a);
+  if    (a == 'a' || a == 'b' || a == 'c' || a == 'd' || a == 'e' || a == 'f'
+      || a == 'g' || a == 'h' || a == 'i' || a == 'j' || a == 'k' || a == 'l'
+      || a == 'm' || a == 'n' || a == 'o' || a == 'p' || a == 'q' || a == 'r'
+      || a == 's' || a == 't' || a == 'u' || a =='v'||a == 'w' || a == 'x'
+      || a == 'y' || a == 'z')
+    {
+      printf ("This is lowercase alphabet");
+    }
+  else
+    {
+      printf ("This is a upper case alphabet");
+    }
+  return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*15)user input : 
+a =>addition perform 
+s =>substraction 
+m =>multiplication 
+d =>division 
+r =>modular*/
+#include<stdio.h>
+int main ()
+{
+    char character;
+    printf("Please enter the character ");
+    scanf("%c",&character);
+    if(character=='a'||character=='A')
+    {
+        int a,b,addition;
+        printf("Please enter the number for addition: ");
+        scanf("%d %d",&a,&b);
+        addition=a+b;
+        printf("The addition of %d and %d is %d",a,b,addition);
+    }
+     else if(character=='s'||character=='S')
+    {
+        int a,b,subtraction;
+        printf("Please enter the number for subtraction: ");
+        scanf("%d %d",&a,&b);
+        subtraction=a-b;
+        printf("The subtraction of %d and %d is %d",a,b,subtraction);
+    }
+    else if(character=='m'||character=='M')
+    {
+        int a,b,multiplication;
+        printf("Please enter the number for multiplication: ");
+        scanf("%d %d",&a,&b);
+        multiplication=a*b;
+        printf("The multiplication of %d and %d is %d",a,b,multiplication);
+    }
+    else if(character=='d'||character=='D')
+    {
+        float a,b,division;
+        printf("Please enter the number for division: ");
+        scanf("%f %f",&a,&b);
+        division=a/b;
+        printf("The addition of %f and %f is %f",a,b,division);
+    }
+    else if(character=='r'||character=='R')
+    {
+        int a,b,modular;
+        printf("Please enter the dividend: ");
+        scanf("%d",&a);
+        printf("Please enter the divisor: ");
+        scanf("%d",&b);
+        modular=a*b/100;
+        printf("The percentage of %d and %d is %dpercent",a,b,modular);
+    }
+    else
+    {
+        printf("Not valid");
+    }
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*16)user input :character 
+a =>area of circle (3.14*r*r) 
+s =>volume of shphere 
+c => Volume of cylinder 
+q =>cube volumn 
+t =>area of triangle */
+#include<stdio.h>
+int main ()
+{
+    char character;
+    printf("Please select the character(a,s,c,q,t):  ");
+    scanf("%c",&character);
+    if(character=='a'||character=='A')
+    {
+        float a,area;
+        printf("Please enter the radius: ");
+        scanf("%f",&a);
+        area=3.14159265359*a*a;
+        printf("Area of circle is: %f",area);
+    }
+     else if(character=='s'||character=='S')
+    {
+        float a,volume;
+        printf("Please enter the radius: ");
+        scanf("%f",&a);
+        volume=(4*3.14159265359*a*a*a)/3.0;
+        printf("Volume of sphere is %f: ",volume);
+    }
+    else if(character=='c'||character=='C')
+    {
+        float r,h,volume;
+        printf("Please enter the radius: ");
+        printf("please enter the height: ");
+        scanf("%f %f",&r,&h);
+        volume=3.14159265359*r*r*h;
+        printf("Volume of cylinder is: %f",volume);
+    }
+    else if(character=='q'||character=='Q')
+    {
+        int a,volume;
+        printf("Please enter the area: ");
+        scanf("%d",&a);
+        volume=a*a*a;
+        printf("Volume of cube is: %d",volume);
+    }
+    else if(character=='r'||character=='R')
+    {
+        int b,h,area;
+        printf("Please enter the base: ");
+        scanf("%d",&b);
+        printf("Please enter the height: ");
+        scanf("%d",&h);
+        area=b*h/2;
+        printf("Area of triangle is: %d",area);
+    }
+    else
+    {
+        printf("Not valid");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

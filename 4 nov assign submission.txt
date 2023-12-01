@@ -1,0 +1,110 @@
+/* Q:1) voter id : 
+user age 
+18 se  jyada hey =>valid for vote 
+
+not valid for vote */
+
+#include<stdio.h>
+int main()
+{
+    int age;
+    printf("Enter your age :");
+    scanf("%d",&age);
+    if(age>18)
+    {
+        printf("You are valid for vote");
+    }
+    else
+    {
+        printf("Sorry you are not legal for vote");
+    }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/* Q:2)  user input : 
+
+value 50 se jyada hey process 
+
+50 se km hey too not porcess */
+
+#include<stdio.h>
+int main()
+{
+    int age;
+    printf("Please enter your age: ");
+    scanf("%d",&age);
+    if(age>50)
+    {
+        printf("Processing......");
+    }
+    else
+    {
+        printf("Not processing, user invalid");
+    }
+    return 0;
+}
+_________________________________________________________________________________________________________________________________________________________________________________________
+
+// Q:3) num check number 5 se divisible
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Please enter the number :");
+    scanf("%d",&num);
+    if(num%5==0)
+    {
+        printf("Divisible by 5");
+    }
+    else{
+        printf("Not divisible by 5");
+    }
+     return 0;
+}
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+
+// Q:4) numb check number 11 se divisible 
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Please enter the number :");
+    scanf("%d",&num);
+    if(num%11==0)
+    {
+        printf("Your number is divisible by 11");
+    }
+    else
+    {
+        printf("Sorry your number is not divisible by 11");
+    }
+    return 0;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,269 @@
+/*1)Positive/Negative/Zero:
+Write a program that takes an integer as input and prints whether it is positive, negative, or zero.*/
+     #include<stdio.h>
+     int main()
+     {
+         int integer;
+         printf("Please enter an interger number: ");
+         scanf("%d",&integer);
+         if(integer<0)
+         {
+            printf("This is an negative integer"); 
+         }
+         else if(integer==0)
+         {
+            printf("This is an 0"); 
+         }
+        else
+        {
+            {
+                printf("This is an positive integer");    
+            }
+        }
+         return 0;
+     }
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+/*2)
+odd even 
+.*/
+     #include<stdio.h>
+     int main()
+     {
+         int integer;
+         printf("Please enter an interger number: ");
+         scanf("%d",&integer);
+         if(integer%2==0)
+         {
+            printf("This is an even number"); 
+         }
+        else
+        {
+                printf("This is an odd number");    
+        }
+         return 0;
+     }
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+/*Q:3)e =>USER INPUT =>one number check 
+			number =>even =>this number is even 
+			number =>not even=>this number is not even 
+
+o =>one number input 
+		number odd =>odd number 
+		number odd not=>thid number is not odd number*/ 
+
+#include<stdio.h>
+int main()
+{
+    char alpha;
+    printf("Please enter your Task which you want to performe\n Press E to check the number is even or not\n Press O to check the number is even or not : ");
+    scanf("%c",&alpha);
+    if(alpha=='e' || alpha=='E')
+    {
+        int integer;
+        printf("Please enter your number: ");
+        scanf("%d",&integer);
+        if(integer%2==0)
+        {
+            printf("The number is even");
+        }
+        else
+        {
+            printf("The number is not even");
+        }
+    }
+       else if(alpha=='o' || alpha=='O')
+    {
+        int integer;
+        printf("Please enter your number: ");
+        scanf("%d",&integer);
+        if(integer%2==0)
+        {
+            printf("The number is odd");
+        }
+        else
+        {
+            printf("The number is not odd");
+        }
+    }
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+ /*5)
+C program to enter student marks and find percentage and grade
+A college has the following rules for the grading system:
+5 marks (grade + %)
+1. Below 25 – F
+2. 25 to 45 – E
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B 
+6. Above 80 – A */
+     #include<stdio.h>
+     int main()
+     {  
+         int mark1,mark2,mark3,mark4,mark5,total_marks;
+         float percentage;
+         printf("Please enter the 5 subjects marks by giving space between: ");
+         scanf("%d %d %d %d %d",&mark1,&mark2,&mark3,&mark4,&mark5);
+         total_marks=mark1+mark2+mark3+mark4+mark5;
+         percentage=(total_marks*100)/500;
+         printf("Your percentage is: %f\n",percentage);
+         if(percentage<25)
+         {
+              
+            printf("Your grade is 'F'");
+         }
+          
+          else if(percentage>25 && percentage<45)
+         {
+            printf("Your grade is 'E'");
+         }
+          else if(percentage>45 && percentage<50)
+         {
+            printf("Your grade is 'D'");
+         }  
+         else if(percentage>50 && percentage<60)
+         {
+             printf("Your grade is 'C");
+         }
+         else if(percentage>60 && percentage<80)
+         {
+             printf("Your grade is 'B");
+         }
+         else  
+         {
+             printf("Your grade is 'A' ");
+         }
+        
+         return 0;
+     }       
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+ /*5)
+salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays 
+  */
+     #include<stdio.h>
+     int main()
+     {  
+        int salary,holidays,cut,alot;
+        printf("Please enter your salary: ");
+        scanf("%d",&salary);
+        printf("Please enter your holidays: ");
+        scanf("%d",&holidays);
+        if(holidays==1)
+        {
+            printf("NAME           -: SATISH KUMAWAT\n");
+            printf("ADDRESS        -: REGex,(JAIPUR)\n");
+            printf("BANK DETAILS   -: UNION BANK OF INDIA\n");
+            printf("SALARY         -: %d\n",salary);
+            printf("ALOT           -: %d\n",salary);
+            printf("HOLIDAYS       -: %d\n",holidays);
+        }
+        else if(holidays>=2 && holidays<=5)
+        {
+            cut=salary*5/100;
+            alot=salary-cut;
+            printf("NAME           -: SATISH KUMAWAT\n");
+            printf("ADDRESS        -: REGex,(JAIPUR)\n");
+            printf("BANK DETAILS   -: UNION BANK OF INDIA\n");
+            printf("SALARY         -: %d\n",salary);
+            printf("ALOT           -: %d\n",alot);
+            printf("HOLIDAYS       -: %d\n",holidays);
+        }
+        else if(holidays>=5 && holidays<=14)
+        {
+            cut=salary*10/100;
+            alot=salary-cut;
+            printf("NAME           -: SATISH KUMAWAT\n");
+            printf("ADDRESS        -: REGex,(JAIPUR)\n");
+            printf("BANK DETAILS   -: UNION BANK OF INDIA\n");
+            printf("SALARY         -: %d\n",salary);
+            printf("ALOT           -: %d\n",alot);
+            printf("HOLIDAYS       -: %d\n",holidays);
+        }
+        else if(holidays==15)
+        {
+            cut=salary*50/100;
+            alot=salary-cut;
+            printf("NAME           -: SATISH KUMAWAT\n");
+            printf("ADDRESS        -: REGex,(JAIPUR)\n");
+            printf("BANK DETAILS   -: UNION BANK OF INDIA\n");
+            printf("SALARY         -: %d\n",salary);
+            printf("ALOT           -: %d\n",alot);
+            printf("HOLIDAYS       -: %d\n",holidays);
+        }
+        else
+        {
+            printf("No salary");
+        }
+        return 0;
+     }       
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*6)
+m M =>male 
+	age :check valid vote 
+
+f F =>female 
+	age:check valid for vote */
+	#include<stdio.h>
+	int main()
+	{
+	    char gender;
+	    printf("Please enter your gender: ");
+	    scanf("%c",&gender);
+	    if(gender=='f' || gender=='F')
+	    {
+	        int age;
+	        printf("Please enter your age: ");
+	        scanf("%d",&age);
+	        if(age>=18)
+	        {
+	            printf("You are valid");
+	        }
+	        else
+	        {
+	            printf("You are not valid");
+	        }
+	    }
+	    	   else if(gender=='m' || gender=='M')
+	    {
+	        int age;
+	        printf("Please enter your age: ");
+	        scanf("%d",&age);
+	        if(age>=21)
+	        {
+	            printf("You are valid");
+	        }
+	        else
+	        {
+	            printf("You are not valid");
+	        }
+	    }
+	    else
+	    {
+	        printf("Please enter your your gender by perssing F for female and M for male");
+	    }
+	    return 0;
+	}
+___________________________________________________________________________________________________________

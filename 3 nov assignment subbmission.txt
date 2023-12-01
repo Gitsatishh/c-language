@@ -1,0 +1,302 @@
+/*Q1: Get three values from user 1-:23
+                                 2-:3.456
+                                 3-:123456*/
+#include <stdio.h>
+int main()
+{
+    int a,c;
+    float b;
+    printf("Plesase enter number a :");
+    scanf("%d",&a);
+    printf("Plesase enter number b :");
+    scanf("%f",&b);
+    printf("Plesase enter number c :");
+    scanf("%d",&c);
+    printf("All a,b,c number are %d, %f, %d",a,b,c);
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________
+
+/* Q2: Get the value from user T
+                               W
+                               U
+                               H*/
+#include <stdio.h>
+int main()
+{
+    char a;                                                                                            
+    printf("Please Enter the value of a :\n");
+    scanf("%c",&a);                                                                                  
+    char b;
+        printf("Please Enter the value of b :\n");
+    scanf("%c\n",&b);
+    char c;
+        printf("Please Enter the value of c :\n");
+    scanf("%c\n",&c);
+    char d;
+        printf("Please Enter the value of d :\n");
+    scanf("%c\n",&d);
+    printf("The stored value is :%c,%c,%c,%c",a,b,c,d);
+    return 0;
+}
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+// Q:3    12+78
+#include<stdio.h>
+int main()
+{
+    int num1;
+    printf("Please enter number one: ");
+    scanf("%d",&num1);
+    int num2;
+    printf("Please enter second number: ");
+    scanf("%d",&num2);
+    int product;
+    product=num1+num2;
+    printf("The sum is :%d",product);
+    return 0;
+}
+
+________________________________________________________________________________________________________________________________________________________________________
+// Q4: 567-34 
+#include <stdio.h>
+int main()
+{
+    int a,b,sum;
+    printf("Please enter the number 1 :");
+    scanf("%d",&a);
+    printf("Please enter the number 2 :");
+    scanf("%d",&b);
+    sum=a+b;
+    printf("The sum is :%d",sum);
+    return 0;
+}
+_______________________________________________________________________________________________________________________________________________________________________
+// Q5: 22/2
+#include <stdio.h>
+int main()
+{
+    int a,b,sum;
+    printf("Please enter the number 1 :");
+    scanf("%d",&a);
+    printf("Please enter the number 2 :");
+    scanf("%d",&b);
+    sum=a/b;
+    printf("The sum is :%d",sum);
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________
+// Q6: 23*124
+#include <stdio.h>
+int main()
+{
+    int a,b,sum;
+    printf("Please enter the number 1 :");
+    scanf("%d",&a);
+    printf("Please enter the number 2 :");
+    scanf("%d",&b);
+    sum=a*b;
+    printf("The sum is :%d",sum);
+    return 0;
+}
+______________________________________________________________________________________________________________________________________________________________________
+// Q7: 23+56+8+12 
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,sum;
+    printf("Please enter the number 1 :");
+    scanf("%d",&a);
+    printf("Please enter the number 2 :");
+    scanf("%d",&b);
+    printf("Please enter the number 3 :");
+    scanf("%d",&c);
+    printf("Please enter the number 4 :");
+    scanf("%d",&d);
+    sum=a+b+c+d;;
+    printf("The sum is :%d",sum);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________
+
+// Q8: 67-12*3+7
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,sum;
+    printf("Please enter the number 1 :");
+    scanf("%d",&a);
+    printf("Please enter the number 2 :");
+    scanf("%d",&b);
+    printf("Please enter the number 3 :");
+    scanf("%d",&c);
+    printf("Please enter the number 4 :");
+    scanf("%d",&d);
+    sum=a-b*c+d;;
+    printf("The sum is :%d",sum);
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________
+// Q9:  1.2+5.6*2 -8
+#include <stdio.h>
+int main()
+{
+    float a,b,sum;
+    int c,d;
+    printf("Please enter the number 1 :");
+    scanf("%f",&a);
+    printf("Please enter the number 2 :");
+    scanf("%f",&b);
+    printf("Please enter the number 3 :");
+    scanf("%d",&c);
+    printf("Please enter the number 4 :");
+    scanf("%d",&d);
+    sum=a+b*c-d;
+    printf("The sum is :%f",sum);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________
+
+// Q10:  12+(56*32)-78/2 
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,e,sum;
+    printf("Please enter the number 1 :");
+    scanf("%d",&a);
+    printf("Please enter the number 2 :");
+    scanf("%d",&b);
+    printf("Please enter the number 3 :");
+    scanf("%d",&c);
+    printf("Please enter the number 4 :");
+    scanf("%d",&d);
+    printf("Please enter the number 5 :");
+    scanf("%d",&e);
+    sum=a+(b*c)-d/e;
+    printf("The sum is :%d",sum);
+    return 0;
+}
+
+______________________________________________________________________________________________________________________________________________________________________
+// Q11:  area of square 
+#include <stdio.h>
+int main()
+{
+    float a,area;
+    printf("Enter the value of side :");
+    scanf("%f",&a);
+    area=a*a;
+    printf("Area of square is :%f",area);
+    return 0;
+}
+_________________________________________________________________________________________________________________________________________________________________
+
+12)area of triangle by user input?
+solution:
+#include <stdio.h>
+
+int main()
+{
+   //area of triangle
+  int height;
+  printf("enter the value of height");
+  scanf("%d",&height);
+  int base;
+  printf("enter the value of base");
+  scanf("%d",&base);
+  int area;
+  area=(height*base)/2;
+  printf("%d",area);
+    return 0;
+}
+_________________________________________________________________________________________________________________________________________________________________
+13)area of rectangle by user input?
+solution:
+#include <stdio.h>
+
+int main()
+{
+    //area of rectangle
+  int length;
+  printf("enter the value of length");
+  scanf("%d",&length);
+  int width;
+  printf("enter the value of width");
+  scanf("%d",&width);
+  int area;
+  area=length*width;
+  printf("%d",area);
+    return 0;
+}
+_________________________________________________________________________________________________________________________________________________________________
+14)volume of sphere by user input?
+solution:
+#include <stdio.h>
+
+int main()
+{
+    //volume of sphere
+  int radius;
+  printf("enter the value of radius");
+  scanf("%d",&radius);
+  float pie=3.14;
+  float volume;
+  volume=pie*radius*radius*radius*4/3;
+  printf("%f",volume);
+    return 0;
+}
+_________________________________________________________________________________________________________________________________________________________________
+15)volume of cube by user input?
+solution:
+#include <stdio.h>
+
+int main()
+{
+   //volume of cube
+  int side;
+  printf("enter the value of side");
+  scanf("%d",&side);
+  int volume;
+  volume=side*side*side;
+  printf("%d",volume);
+    return 0;
+}
+_________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,308 @@
+//Q1): user input            :m =>male                              :invalid 
+
+#include<stdio.h>
+int main ()
+{
+    char male;
+    printf("please enter first character your gender: ");
+    scanf("%c",&male);
+    if('m'==male || 'M'==male)
+    {
+        printf("Valid");
+    }
+    else
+    {
+        printf("Invalid");
+    }
+    return 0;
+}
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q2):   e r t y u i o p q w => upper line of keyboard                                            :lower line of keyboard 
+
+#include<stdio.h>
+int main()
+{
+    char upline;
+    printf("Please enter the alphabet: ");
+    scanf("%c",&upline);
+    if(upline=='Q'||upline=='W'||upline=='E'||upline=='R'||upline=='T'||upline=='Y'||upline=='U'||upline=='I'||upline=='O'||upline=='P'||upline=='q'||upline=='w'||upline=='e'||upline=='r'||upline=='t'||upline=='y'||upline=='u'||upline=='i'||upline=='o'||upline=='p')
+    {
+        printf("Upper line ulphabt of keyboard");
+    }
+    else
+    {
+        printf("Lower line alphabet in kryboard");
+    }
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q3):   vowel or consonent 
+
+#include<stdio.h>
+int main()
+{
+    char vowel;
+    printf("Please enter the alphabet: ");
+    scanf("%c",&vowel);
+    if(vowel=='a'||vowel=='e'||vowel=='i'||vowel=='o'||vowel=='u'||vowel=='A'||vowel=='E'||vowel=='I'||vowel=='O'||vowel=='U')
+    {
+        printf("Vowel");
+    }
+    else
+    {
+        printf("Consonent");
+    }
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q4): number swap  without third varaible
+#include<stdio.h>
+int main()
+{
+    int a=1,b=2;
+    printf("Your number of a and b is: %d , %d\n",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("Your number of a and b is: %d , %d",a,b);
+    return 0;
+}
+
+--------------------------------------------------------------------------
+//number swap  with third varaible
+#include<stdio.h>
+int main()
+{
+    int a=1,b=2,c;
+    printf("Your number of a and b is: %d , %d\n",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("Your number of a and b is: %d , %d",a,b);
+    return 0;
+}
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+// Q:5) odd and even
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Please enter the number :");
+    scanf("%d",&num);
+    if(num%2==0)
+    {
+        printf("Odd number");
+    }
+    else{
+        printf("Even number");
+    }
+     return 0;
+}
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+// Q6):  a s d f g h j k l =>mid line of keyboard                                 :not valid 
+#include<stdio.h>
+int
+main ()
+{
+  char alphabet;
+  printf ("Please enter the character: ");
+  scanf ("%c", &alphabet);
+  if(alphabet=='a'||alphabet=='s'||alphabet=='d'||alphabet=='f'||alphabet=='g'||alphabet=='h'||alphabet=='j'||alphabet=='k'||alphabet=='l'||alphabet=='A'||alphabet=='S'||alphabet=='D'||alphabet=='F'||alphabet=='G'||alphabet=='H'||alphabet=='J'||alphabet=='K'||alphabet=='L')
+    {
+        printf("Mid line of keyboard");
+    }
+    else{
+        printf("Not valid");
+    }
+     return 0;
+}
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+// Q7):  z x c v b n m  =>mid line of keyboard                                 :not valid 
+#include<stdio.h>
+int
+main ()
+{
+  char alphabet;
+  printf ("Please enter the character: ");
+  scanf ("%c", &alphabet);
+  if(alphabet=='z'||alphabet=='x'||alphabet=='c'||alphabet=='v'||alphabet=='b'||alphabet=='n'||alphabet=='m'||alphabet=='Z'||alphabet=='X'||alphabet=='C'||alphabet=='V'||alphabet=='B'||alphabet=='N'||alphabet=='M')
+    {
+        printf("Lower line of keyboard");
+    }
+    else{
+        printf("Not valid");
+    }
+     return 0;
+}
+_________________________________________________________________________________________________________________________________________________________________________________________
+//Q8):  1 =sunday  2 =monday   3 tuesday   5 6 7   not match
+ 
+#include<stdio.h>
+int main()
+{
+    int week;
+    printf("Please enter the number: ");
+    scanf(" %d",&week);
+    if(week==1)
+    {
+        printf("Sunday");
+    }
+    else if(week==2)
+    {
+        printf("Monday");
+    }
+    else if(week==3)
+    {
+        printf("Tuesday");
+    }
+    else if(week==4)
+    {
+        printf("Wednesday");
+    }
+    else if(week==5)
+    {
+        printf("Thursday");
+    }
+    else if(week==6)
+    {
+        printf("Friday");
+    }
+    else if(week==7){
+        printf("Saturday");
+    }
+    else
+    {
+        printf("Not valid");
+    }
+    return 0;
+}
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+/* Q9): month 
+        1-->12 
+        1 jan 
+        2 feb  
+        3 marc */
+#include<stdio.h>
+int main()
+{
+    int month;
+    printf("Please enter the number: ");
+    scanf(" %d",&month);
+    if(month==1)
+    {
+        printf("January");
+    }
+    else if(month==2)
+    {
+        printf("February");
+    }
+    else if(month==3)
+    {
+        printf("March");
+    }
+    else if(month==4)
+    {
+        printf("April");
+    }
+    else if(month==5)
+    {
+        printf("May");
+    }
+    else if(month==6)
+    {
+        printf("June");
+    }
+    else if(month==7){
+        printf("July");
+    }
+    else if(month==8)
+    {
+        printf("August");
+    }
+    else if(month==9)
+    {
+        printf("September");
+    }
+    else if(month==10)
+    {
+        printf("October");
+    }
+    else if(month==11)
+    {
+        printf("November");
+    }
+    else if(month==12)
+    {
+        printf("December");
+    }
+    else
+    {
+        printf("Not valid");
+    }
+    return 0;
+}
+
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+/* Q10):
+a =apple 
+b =boy 
+c =cat 
+d =doll 
+e =elephant 
+f =frog 
+
+not match  */
+#include<stdio.h>
+int main()
+{
+    char character;
+    printf("Please enter the number: ");
+    scanf("%c",&character);
+    if(character=='a')
+    {
+        printf("Apple");
+    }
+    else if(character=='b')
+    {
+        printf("Boy");
+    }
+    else if(character=='c')
+    {
+        printf("Cat");
+    }
+    else if(character=='d')
+    {
+        printf("Doll");
+    }
+    else if(character=='e')
+    {
+        printf("Elephant");
+    }
+    else if(character=='f')
+    {
+        printf("Frog");
+    }
+    else 
+    {
+        printf("Not match");
+    }
+    return 0;
+}
+
+
+
